@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<head>
+    <meta charset="UTF-8">
+    <title>Hallo Penida</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#0077b6;
+            color:white;
+            padding:15px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+        }
+
+        nav ul li{
+            margin-left:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+        }
+
+        .hero{
+            height:500px;
+            background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+        }
+
+        .hero-content{
+            background:rgba(0,0,0,0.5);
+            padding:30px;
+            border-radius:10px;
+        }
+
+        .hero h1{
+            font-size:40px;
+            margin-bottom:10px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:15px;
+            padding:10px 20px;
+            background:#00b4d8;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        section{
+            padding:60px 10%;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:30px;
+            color:#0077b6;
+        }
+
+        .paket-container{
+            display:flex;
+            gap:20px;
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+
+        .card{
+            background:white;
+            width:300px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .card h3{
+            color:#0077b6;
+            margin-bottom:10px;
+        }
+
+        .galeri{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:15px;
+        }
+
+        .galeri img{
+            width:100%;
+            border-radius:10px;
+        }
+
+        .about, .contact{
+            text-align:center;
+            line-height:1.8;
+        }
+
+        footer{
+            background:#0077b6;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+     <div class="logo-tittle">
+        <img src="images/logo.jpeg" alt="Logo Travel" class="logo">
+
+        <div class="text"></div>
+            <h1 class="tittle">Hallo Penida</h1>
+            <p>Explore The Beauty of Nusa Penida</p>
+        </div>
+    </div>
+     
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#paket">Paket</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Explore Nusa Penida</h1>
+        <p>Nikmati perjalanan terbaik bersama Hallo Penida</p>
+        <a href="#paket" class="btn">Lihat Paket</a>
+    </div>
+</section>
+
+<section id="paket">
+    <section id="pricelist">
+    <h2>Pricelist Trip With Hallo Penida</h2>
+
+    <!-- WEST TRIP -->
+    <div class="pricelist-container">
+
+        <div class="card">
+            <h3>West Trip</h3>
+            <p><strong>Include:</strong></p>
+            <ul>
+                <li>Tiket fastboat PP Bali - Nusa Penida</li>
+                <li>Retribusi tiket</li>
+                <li>Private car</li>
+                <li>Entrance ticket</li>
+                <li>Lunch</li>
+            </ul>
+
+            <table>
+                <tr><td>1 Pax</td><td>1.375K / 1.180K</td></tr>
+                <tr><td>2 Pax</td><td>920K / 790K</td></tr>
+                <tr><td>3 Pax</td><td>770K / 660K</td></tr>
+                <tr><td>4 Pax</td><td>690K / 600K</td></tr>
+                <tr><td>5 Pax</td><td>650K / 550K</td></tr>
+                 <tr><td>6 Pax</td><td>620K / 530K</td></tr>
+            </table>
+
+            <p><strong>Extra Snorkeling:</strong> +100K / pax (Net) | Publish 150K | Foreigner 200K</p>
+        </div>
+
+    <!-- EAST TRIP -->
+        <div class="card">
+            <h3>East Trip</h3>
+            <p><strong>Include:</strong></p>
+            <ul>
+                <li>Tiket PP Bali - Nusa Penida</li>
+                <li>Retribusi tiket</li>
+                <li>Private car</li>
+                <li>Entrance ticket</li>
+                <li>Lunch</li>
+            </ul>
+
+            <table>
+                <tr><td>1 Pax</td><td>1500K / 1280K</td></tr>
+                <tr><td>2 Pax</td><td>1040K / 890K</td></tr>
+                <tr><td>3 Pax</td><td>890K / 760K</td></tr>
+                <tr><td>4 Pax</td><td>810K / 700K</td></tr>
+                <tr><td>5 Pax</td><td>770K / 660K</td></tr>
+                <tr><td>6 Pax</td><td>740K / 630K</td></tr>
+            </table>
+        </div>
+
+    <!-- COMBINATION TRIP -->
+        <div class="card">
+            <h3>Combination Trip</h3>
+            <p><strong>Include:</strong></p>
+            <ul>
+                <li>Tiket PP Bali - Nusa Penida</li>
+                <li>Retribusi tiket</li>
+                <li>Private car</li>
+                <li>Entrance ticket</li>
+                <li>Lunch</li>
+            </ul>
+
+            <table>
+                <tr><td>1 Pax</td><td>1800K / 1550K</td></tr>
+                <tr><td>2 Pax</td><td>1190K / 1020K</td></tr>
+                <tr><td>3 Pax</td><td>990K / 850K</td></tr>
+                <tr><td>4 Pax</td><td>890K / 760K</td></tr>
+                <tr><td>5 Pax</td><td>820K / 710K</td></tr>
+                <tr><td>6 Pax</td><td>780K / 670K</td></tr>
+            </table>
+        </div>
+        
+    </div>
+</section>
+
+<section id="galeri">
+    <h2>Galeri Wisata</h2>
+
+    <div class="galeri">
+        <img src="images/house tree.png">
+        <img src="images/pantai.png">
+        <img src="images/pantai2.png">
+        <img src="images/pantai3.png">
+        <img src="images/snorkeling.png">
+        <img src="images/snorlkeling2.png">
+    </div>
+</section>
+
+<section class="about">
+    <h2>Tentang Kami</h2>
+    <p>
+        Hallo Penida adalah UMKM yang menyediakan layanan
+        perjalanan wisata ke Nusa Penida dengan harga terjangkau
+        dan pelayanan profesional.
+    </p>
+</section>
+
+<section class="contact" id="kontak">
+    <h2>Kontak</h2>
+    <p>📱 WhatsApp : 0812-3456-7890</p>
+    <p>📧 Email : hallopenida@gmail.com</p>
+    <p>📍 Bali, Indonesia</p>
+</section>
+
+<footer>
+    <p>© 2026 Hallo Penida. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

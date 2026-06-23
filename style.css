@@ -1,0 +1,75 @@
+.logo img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+}
+.header {
+  display: flex;
+  align-items: center; /* biar sejajar tengah vertikal */
+  justify-content: center; /* posisi di tengah halaman */
+  gap: 15px; /* jarak logo dan teks */
+}
+
+.logo {
+  width: 80px; /* atur ukuran logo */
+  height: auto;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+}
+
+.judul h1{
+    color:white;
+    font-size:32px;
+    margin:0;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+.judul p{
+    color:white;
+    font-size:14px;
+    margin-top:5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr td:first-child {
+    font-weight: bold;
+}
+
+.pricelist-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.pricelist-container .card {
+    width: 300px;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
